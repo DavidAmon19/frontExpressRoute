@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Projeto FullStack</title>
+  </head>
+  <body style="background-color: #212529; color: #fff;">
+    <section class="container">
+      <div>
+        <h1 class="text-center">Cadastro de produtos</h1>
+      </div>
+
+      <div class="main row d-flex justify-content-center">
+        <form id="produtoForm">
+            <div class="col-5">
+                <label class="pb-2" for="ident">ID</label>
+                <input type="number" class="form-control" id="ident" name="ident" placeholder="Digite o numero do ID">
+            </div>
+            <div class="col-5">
+                <label class="pb-2" for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite a descrição do produto">
+            </div>
+            <div class="col-5">
+                <label class="pb-2" for="preco">Preço</label>
+                <input type="number" class="form-control" id="preco" name="preco" placeholder="Digite o preço do produto">
+            </div>
+            <div class="col-5">
+                <label class="pb-2" for="quantidade">Quantidade</label>
+                <input type="number" class="form-control" id="quantidade" name="quantidade" placeholder="Digite a quanntidade">
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-primary mt-3">Cadastrar</button>
+            </div>
+        </form>
+      </div>
+
+      <hr>
+      <div>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>PREÇO</th>
+                    <th>QUANTIDADE</th>
+                    <th>AÇÕES</th>
+                </tr>
+            </thead>
+            <tbody id="conteudo">
+                
+            </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
